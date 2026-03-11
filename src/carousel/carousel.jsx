@@ -1,3 +1,4 @@
+import './carousel.css';
 import { render } from 'preact';
 import { html } from 'htm/preact';
 
@@ -10,9 +11,13 @@ function Carousel({ items }) {
 }
 
 export default function decorate(block) {
+    console.log("Carga el decorate", block)
+
   const items = [...block.querySelectorAll('p')]
     .map(p => ({ title: p.textContent.trim() }))
     .filter(item => item.title);
+
+    console.log("Carga el items", items)
 
   block.innerHTML = '';
 

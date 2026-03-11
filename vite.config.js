@@ -7,17 +7,14 @@ export default defineConfig({
     rollupOptions: {
       input: {
         carousel: 'src/carousel/carousel.jsx',
-        carousel: 'src/carousel/carousel.css',
       },
       output: {
         entryFileNames: 'blocks/[name]/[name].js',
         assetFileNames: 'blocks/[name]/[name].css',
         chunkFileNames: 'blocks/[name]/[name].js',
-      }
+        format: 'es',
+      },
+      preserveEntrySignatures: 'strict',
     }
-  },
-  esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'Fragment',
   }
 });
