@@ -6,7 +6,8 @@ export default defineConfig({
     emptyOutDir: false,   // importante, para que no te borre el proyecto entero
     rollupOptions: {
       input: {
-        carousel: 'src/carousel.jsx'
+        carousel: 'src/carousel/carousel.jsx',
+        carousel: 'src/carousel/carousel.css',
       },
       output: {
         entryFileNames: 'blocks/[name]/[name].js',
