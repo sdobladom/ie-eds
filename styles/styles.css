@@ -85,7 +85,7 @@ body.appear {
 }
 
 header {
-  /*height: var(--nav-height);*/
+  /* height: var(--nav-height); */
 }
 
 header .header,
@@ -143,7 +143,7 @@ pre {
 }
 
 main > div {
-  /*margin: 40px 16px;*/
+  /* margin: 40px 16px; */
 }
 
 input,
@@ -332,6 +332,7 @@ main .section.highlight {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
