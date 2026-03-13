@@ -85,7 +85,7 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  /*height: var(--nav-height);*/
 }
 
 header .header,
@@ -143,7 +143,7 @@ pre {
 }
 
 main > div {
-  margin: 40px 16px;
+  /*margin: 40px 16px;*/
 }
 
 input,
@@ -297,10 +297,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+/*
+margin: 40px 0;
+*/
 }
 
 main > .section > div {
+/*
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
@@ -314,6 +317,7 @@ main > .section:first-of-type {
   main > .section > div {
     padding: 0 32px;
   }
+*/
 }
 
 /* section metadata */
@@ -322,4 +326,13 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }

@@ -1,2 +1,6 @@
 helix-importer-ui
 *.min.js
+blocks/
+scripts/
+vite.config.js
+node_modules/

@@ -1,13 +1,19 @@
 import { defineConfig } from 'vite';
+import { readdirSync } from 'fs';
+import { resolve } from 'path';
+
+const blocks = Object.fromEntries(
+  readdirSync('./src/components', { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => [d.name, resolve(__dirname, `src/components/${d.name}/${d.name}.jsx`)])
+);
 
 export default defineConfig({
   build: {
-    outDir: '.',          // raíz del proyecto
-    emptyOutDir: false,   // importante, para que no te borre el proyecto entero
+    outDir: '.',
+    emptyOutDir: false,
     rollupOptions: {
-      input: {
-        carousel: 'src/carousel/carousel.jsx',
-      },
+      input: blocks,
       output: {
         entryFileNames: 'blocks/[name]/[name].js',
         assetFileNames: 'blocks/[name]/[name].css',
