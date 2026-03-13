@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p147864-e1510969.adobeaemcloud.com/bin/franklin.delivery/sdobladom/ie-eds-piloto/main"
+    url: "https://author-p147864-e1510969.adobeaemcloud.com/bin/franklin.delivery/sdobladom/eds-piloto/main"
     type: "markup"
     suffix: ".html"
